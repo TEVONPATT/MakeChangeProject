@@ -17,6 +17,8 @@ public class MakeChange {
 		double change = customer - itemPrice;
 //		System.out.println("The remaining balance is " + amtOwed);
 	
+//		double result = 
+		
 		while(itemPrice < 20.00) {
 		if(itemPrice > customer) {
 			System.out.println("Your remaining balance is " + amtOwed);
@@ -25,14 +27,33 @@ public class MakeChange {
 			System.out.println("Your remaining balance is $00.00. Have a great day!");
 		}
 		else if(itemPrice < customer) {
+			change = change++;
 			System.out.println("Your change is $" + change);
+			break;
+		
 		}
-		break;
+		
 		}
+
+		double twentyDollar = change / 20.00;
+		double tenDollar = change / 10.00;
+		double fiveDollar = change / 5.00;
+		double oneDollar = change / 1.00;
+		double quarter = change / 00.25;
+		double dime = change / 00.10;
+		double nickel = change / 00.05;
+		double penny = change / 00.01;
+//		while(dollar <= change) {
+//			System.out.println(dollar);
+//		}
+		System.out.println((int) twentyDollar + " twenty dollar bills");
+		System.out.println((int) tenDollar + " ten dollar bills");
+		System.out.println((int) fiveDollar + " five dollar bills");
+		System.out.println((int) oneDollar + " one dollar bills");
+		System.out.println((int) quarter + " quarter");
+		System.out.println((int) dime + " dime");
+		System.out.println((int) nickel + " nickel");
+		System.out.println((int) penny + " penny");
 	}
-	 double quarter = 00.25;
-	 double dime = 00.10;
-	 double nickel = 00.05;
-	 double penny = 00.01;
 	
 }
