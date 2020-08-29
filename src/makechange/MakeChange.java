@@ -19,6 +19,8 @@ public class MakeChange {
 	
 //		double result = 
 		
+		public static void price options() {
+			
 		while(itemPrice < 20.00) {
 		if(itemPrice > customer) {
 			System.out.println("Your remaining balance is " + amtOwed);
@@ -45,7 +47,7 @@ public class MakeChange {
 		double penny = change / 00.01;
 //		while(dollar <= change) {
 //			System.out.println(dollar);
-//		}
+		}
 		System.out.println((int) twentyDollar + " twenty dollar bills");
 		System.out.println((int) tenDollar + " ten dollar bills");
 		System.out.println((int) fiveDollar + " five dollar bills");
@@ -54,6 +56,11 @@ public class MakeChange {
 		System.out.println((int) dime + " dime");
 		System.out.println((int) nickel + " nickel");
 		System.out.println((int) penny + " penny");
+
+		if(twentyDollar == change) {
+			System.out.println(twentyDollar);
+		}
+		
 	}
 	
 }
